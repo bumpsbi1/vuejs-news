@@ -38,7 +38,7 @@ export default {
   created: function() {
     this.$http
       .get(
-        "https://newsapi.org/v2/sources?language=en&apiKey=3c750dfd112b40df8035c36164a73755"
+        "https://newsapi.org/v2/sources?language=en"
       )
       .then(response => {
         this.sources = response.data.sources;
